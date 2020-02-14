@@ -23,4 +23,40 @@ public class CityController {
         System.out.println(json);
 
     }
+
+
+//    @RestController
+//@RequestMapping("/city")
+//public class CityController {
+//
+//    CityService cityService;
+//
+//    @GetMapping
+//    public List<City> getCityListWithParams(
+//            @RequestParam(required = false ,value = "id") Integer id
+//    ){
+//        System.out.println("params: ");
+//        System.out.println(id);
+//
+//        return cityService.getCities(id);
+//    }
+//
+//    @GetMapping("/{stateId}")
+//    public List<City> getCityListWithPath(@PathVariable(required = false ,value = "stateId") Integer stateId){
+//        System.out.println("pathVariable: ");
+//        System.out.println(stateId);
+//        return cityService.getCities(stateId);
+//    }
+//
+//    @GetMapping("/json")
+//    public List<City> getCityListWithJson(
+//            @RequestBody(required= false) StateId json
+//    ){
+//
+//        System.out.println("json: ");
+//        System.out.println(json.getStateId());
+//
+//        return cityService.getCities(json.getStateId());
+//
+//    }
 }
